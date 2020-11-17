@@ -1,0 +1,1533 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    top: 0%;
+
+}
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    background-image: url(.././images/navbar-background/navbar1.webp);
+    position: fixed;
+    opacity: 5;
+}
+
+
+.menu div {
+    width: 32px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 6px 0px;
+    border: 1px solid deepskyblue;
+    border-radius: 19px;
+    animation:2s  colorful linear infinite;
+}
+
+
+@keyframes colorful {
+    0% {
+      background-color: orange;
+    }
+    50% {
+      background-color:rgb(255, 0, 128);
+    }
+    75%{
+        background-color: whitesmoke;
+    }
+    100% {
+      background-color: green;
+    }
+  
+}
+.menu{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+}
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: auto;
+    color: lime;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.navbar li a:hover {
+    color: aliceblue;
+
+    padding: 1px;
+    animation:1.5s blinker linear infinite;
+    -webkit-animation:1.5s blinker linear infinite;
+    -moz-animation:1.5s blinker linear infinite;
+
+}
+
+.animation-line:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 1.5px;
+    display: block;
+    margin-top: -4px;
+    right: 0;
+    background: #fff;
+    transition: width 0.7s ease;
+    -webkit-transition: width 0.7s ease;
+  }
+   .animation-line{
+    position: relative;
+   }
+  .animation-line:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+  }
+  
+  .animation-line {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .animation-line:hover, .animation-line:focus, .animation-line:active {
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+
+.navbar li {
+    list-style: none;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: -0.2%;
+    margin-top: 0.1%;
+}
+.logo img {
+    display: block;
+    width: 403px;
+    height: 244px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: -21%;
+    margin-top: -25%;
+}
+
+
+
+
+.ct-socials {
+    position: fixed;
+    top: 21%;
+    right: 0;
+    list-style: none;
+    padding-left: 0;
+    z-index: 10;
+    margin: 0;
+    -webkit-transition: right 0.25s ease-in-out;
+    transition: right 0.25s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 26px;
+}
+
+.ct-socials li {
+    padding: 0px 0;
+}
+.ct-socials li a {
+    background: #3f4653;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    width: 44px;
+    height: 54px;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    float: right;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.ct-socials li a:hover {
+    width: 54px;
+    padding-left: 0;
+    text-decoration: none;
+    background: #3c9bd9;
+}
+
+
+
+.fa-youtube-play{
+    color: red;
+}
+.fa-youtube-play:hover{
+    
+    
+animation:1s spin linear infinite;
+-webkit-animation:1s spin linear infinite;
+-moz-animation:1s spin linear infinite;
+}
+
+.fa-whatsapp{
+    color: greenyellow;
+}
+.fa-whatsapp:hover{
+    color: #25D366;
+    
+animation:1s spin linear infinite;
+-webkit-animation:1s spin linear infinite;
+-moz-animation:1s spin linear infinite;
+}
+
+
+.fa-linkedin:hover{
+    color:#0077b5;
+    
+animation:1s spin linear infinite;
+-webkit-animation:1s spin linear infinite;
+-moz-animation:1s spin linear infinite;
+}
+
+
+
+.fa-instagram{
+    color:  #ffc838;
+}.fa-instagram:hover{
+    color:  #C13584;
+    
+animation:1s spin linear infinite;
+-webkit-animation:1s spin linear infinite;
+-moz-animation:1s spin linear infinite;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.fa-telegram{
+    color:springgreen;
+}
+
+
+
+.fa-telegram:hover {
+    color: #f5deb3;
+    
+animation:1s spin linear infinite;
+-webkit-animation:1s spin linear infinite;
+-moz-animation:1s spin linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+  /******************************************first-page**************************************************/
+
+.para1 p {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.course-heading {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Grenze Gotisch', cursive;
+    color: darkblue;
+}
+.courses-container {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.position-fixed {
+    max-width: 23%;
+    margin: 0rem 3rem;
+    border: 2px solid gainsboro;
+}
+.position-fixed:hover {
+    border: 2px solid silver;
+}
+.position-fixed .img img {
+    width: 100%;
+    height: 14rem;
+}
+.position-fixed .course-name h2 {
+    font-size: 1.2rem;
+    color: darkblue;
+}
+
+.position-fixed .para p {
+    font-size: 1rem;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+.course-content .para {
+    font-size: 1.5rem;
+    color: inherit;
+    font-weight: bold;
+}
+
+.enroll-button button {
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    background: linear-gradient(to left,rgb(228, 224, 13),hotpink);
+    padding: 2px;
+    border-radius: 52px;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.enroll-button button a {
+    text-decoration: none;
+    color: darkblue;
+}
+.enroll-button button a:hover{
+    color: red;
+}
+.enroll-button button:hover {
+    font-size: 2.3rem;
+}
+.author{
+        font-family: math;
+}
+  /***********************finish first page ****************************************************************/
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    color: crimson;
+    margin-top: 1%;
+}
+@keyframes rotate-bg-color {
+    0% {
+      color: orange;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: rgb(255, 0, 128);
+    }
+
+  }
+.heading h2{      
+    margin-bottom: -7%;
+    margin-top: 1%;
+    user-select: none;
+    
+    animation: rotate-bg-color 0.8s infinite;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 22rem;
+    margin-bottom: -3%;
+}
+
+.blow-first-page {
+    margin-top: -1%;
+    background: floralwhite;
+}
+.cont {
+    width: 100%;
+    height: 10rem;
+    margin: 0% 6%;
+    border: 2px;
+    border-radius: 23px;
+    margin-bottom: -4%;
+    border-style: revert;
+}
+.cont:hover {
+    width: 100%;
+    height: 12rem;
+    margin: 0% 6%;
+    border: 2px;
+    border-radius: 23px;
+    margin-bottom: -4%;
+    border-style: revert;
+}
+.cont-2{
+    background: url(.././images/mission/2.webp);
+    background-repeat: no-repeat;
+ background-size: cover;   
+
+}
+.cont-3{
+    background: url(.././images/mission/3.webp);
+    background-repeat: no-repeat;
+ background-size: cover;   
+
+}
+.cont-1{
+    background: url(.././images/mission/1.webp);
+    background-repeat: no-repeat;
+ background-size: cover;   
+
+}
+
+
+.blow-mission {
+    background: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+}
+.list-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 50%;
+    margin-top: 3%;
+}
+
+.textbig{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+.textbig p{
+    font-family: 'Bree Serif', serif;
+}
+.textbig h5{
+    font-size: 3rem;
+    user-select: none;
+}
+.m-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128%;
+    background: border-box;
+    border: 0px solid royalblue;
+}
+.m-1 img {
+    width: 102%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: border-box;
+    border: 1px;
+    border-radius: 3rem;
+}
+.textbig .button {
+    text-decoration: none;
+    background: linear-gradient(to left,rgb(228, 224, 13),hotpink);
+    padding: 4px;
+    border-radius: 46%;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    font-family: 'Lobster', cursive;
+    width: 19%;
+}
+
+      .textbig .button a{
+ text-decoration-line: none;
+}
+
+
+.textbig .button a:hover {
+    text-decoration-line: none;
+    color: white;
+}
+
+
+
+
+.list-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.list-box-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin-top: 3%;
+}
+.textbig-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 109%;
+}
+.textbig-2 h5{
+    font-size: 3rem;
+    user-select: none;
+}
+.textbig-2 p{
+    font-family: 'Bree Serif', serif;
+}
+.m-1-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 36%;
+}
+.m-1-2 img {
+    width: 96%;
+    border: 1px ;
+    border-radius: 21%;
+}
+.texts{
+    max-width: 100%;
+    margin-left: 1%;
+}
+.textbig-2 .button {
+    text-decoration: none;
+    background: linear-gradient(to left,rgb(228, 224, 13),hotpink);
+    padding: 4px;
+    border-radius: 46%;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    font-family: 'Lobster', cursive;
+    width: 19%;
+}
+.textbig-2 .button a{
+ text-decoration-line: none;
+}
+.textbig-2 .button a:hover{
+    color: white;
+   }
+.contact-box {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    background: floralwhite;
+}
+.write-box {
+    margin: 12% 0%;
+    font-size: 1rem;
+    width: 146%;
+    height: 64px;
+    border: 1p solid black;
+    border-radius: 34px;
+    margin-left: -22%;
+    padding: 2%;
+}
+.submit .button {
+    text-decoration: none;
+    background: linear-gradient(to left,rgb(228, 224, 13),hotpink);
+    padding: 4px;
+    border-radius: 52px;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    margin-top: 20%;
+    margin-bottom: 8%;
+}
+.submit {
+    margin-left: 22%;
+}
+.bigtext h3 {
+    margin-top: 2%;
+    margin-bottom: -16%;
+    font-size: 4rem;
+    margin-left: 2vw;
+    user-select: none;
+}
+.write-box input{
+    border: 2px solid #2b7d90;
+}
+
+.footer {
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    font-size: 1rem;
+}
+.between {
+    margin: 0% 28%;
+    margin-bottom: 1%;
+}
+.left{
+    margin-bottom: 1%;
+}
+.right h1{
+    margin-left: 24%;
+}
+.left a {
+    color: chartreuse;
+    text-decoration: none;
+}
+.left a:hover {
+    color: whitesmoke;
+ text-decoration: underline;
+ 
+ animation:0.5s blinker linear infinite;
+ -webkit-animation:0.5s blinker linear infinite;
+ -moz-animation:0.5s blinker linear infinite;
+
+
+}.right a {
+    text-decoration: none;
+}
+
+.between a {
+    color: chartreuse;
+    text-decoration: none;
+}
+.between a:hover{
+    color: snow;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.between a:hover {
+
+    animation:0.5s blinker linear infinite;
+    -webkit-animation:0.5s blinker linear infinite;
+    -moz-animation:0.5s blinker linear infinite;
+
+   
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+.follow-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+ .follow-icon .fa-instagram {
+    background: none;
+    font-size: 28px;
+    color: #ffc838;
+
+}
+
+.follow-icon .fa-instagram:hover {
+ color: #F58529 ;
+ 
+ animation:0.5s blinker linear infinite;
+ -webkit-animation:0.5s blinker linear infinite;
+ -moz-animation:0.5s blinker linear infinite;
+
+}
+.follow-icon .fa-telegram {
+    background: none;
+    font-size: 24px;
+    color: rgb(199, 213, 224);
+    
+}
+
+.follow-icon .fa-whatsapp {
+    color: springgreen;
+    font-size: 28px;
+}
+.follow-icon .fa-whatsapp:hover{
+    color: yellowgreen;
+    
+       
+ animation:0.5s blinker linear infinite;
+ -webkit-animation:0.5s blinker linear infinite;
+ -moz-animation:0.5s blinker linear infinite;
+}
+ .follow-icon .facebook{
+    background: none;
+ }
+ .follow-icon .fa-linkedin {
+    background: none;
+    font-size: 28px;
+    color:#00A0DC;
+}
+.follow-icon .fa-linkedin:hover{
+       color: royalblue;
+       
+ animation:0.5s blinker linear infinite;
+ -webkit-animation:0.5s blinker linear infinite;
+ -moz-animation:0.5s blinker linear infinite;
+}
+ .follow-icon .linkedin{
+    background: none;
+    color: white;
+ }
+ .follow-icon .instagram{
+    background: none;
+ }
+ .follow-icon .telegram{
+    background: none;
+ }
+
+
+
+.follow-icon .fa-telegram {
+    background: none;
+    font-size: 28px;
+    margin-left: 1px;
+    color: #e7c9a9;
+}
+
+
+.follow-icon .fa-telegram:hover {
+    color: Orchid ;
+    
+       
+ animation:0.5s blinker linear infinite;
+ -webkit-animation:0.5s blinker linear infinite;
+ -moz-animation:0.5s blinker linear infinite;
+}
+
+ 
+.icons{
+    margin: 0px 23px;
+}
+
+  .donate button {
+        width: 100%;
+        text-decoration: none;
+        background: linear-gradient(to left,rgb(228, 224, 13),hotpink);
+        border-radius: 50px;
+        font-size: 2.5rem;
+        font-family: 'Lobster', cursive;
+    }
+.donate button a{
+    text-decoration: none;
+    margin-left: -11%;
+        animation: rotate-bg-color 0.8s infinite;
+    
+}
+/*************************** media quaires  **********************  */
+@media only screen and (max-width:1425px){
+    .textbig-2 .button {
+        width: 24%;
+    }
+    .between {
+        margin: 0% 23%;
+        margin-bottom: 1%;
+    }
+    
+}
+@media only screen and (max-width:1360px){
+    .cont-3 {
+        background: url(.././images/mission/3-2-1.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:1300px){
+    .textbig .button {
+        width: 21%;
+    }
+}
+@media only screen and (max-width:1195px){
+    .between {
+        margin: 0% 19%;
+        margin-bottom: 1%;
+    }
+    .containers {
+        width: 100%;
+    }
+    .textbig-2 .button {
+        width: 21%;
+    }
+    .textbig .button {
+        width: 18%;
+    }
+    .list-box {
+        max-width: 68%;
+    }
+    .list-box-2 {
+        max-width: 68%;
+    } 
+}
+@media only screen and (max-width:1176px){
+    .position-fixed .course-name h2 {
+        font-size: 1rem;
+    }
+    .position-fixed .para p {
+        font-size: 0.9rem;
+    }
+    .position-fixed .img img {
+        height: 12rem;
+    }
+    .position-fixed .para p {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:1111px){
+    .courses-container {
+        max-width: 95%;
+        margin-left: 2%;
+    }
+    .position-fixed .img img {
+        height: 10rem;
+    }
+    
+}
+@media only screen and (max-width:1052px){
+    .icon-bar {
+        width: 45px;
+    }
+    .fa-whatsapp {
+        margin-left: -7px;
+    }
+    .fa-telegram {
+        margin-left: -2px;
+    }
+    .course-content .para {
+        font-size: 97%;
+    }
+    .position-fixed .para p {
+        font-size: 0.7rem;
+    }
+    .course-heading {
+        margin-top: 2.5rem;
+    }
+    .position-fixed .course-name h2 {
+        font-size: 0.9rem;
+    }
+   
+    .between {
+        margin: 0% 14%;
+        margin-bottom: 1%;
+    }
+   .navbar li a {
+    font-size: 1.2rem;
+}
+    .cont-3 {
+        background: url(.././images/mission/3-2-1-1.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cont-2{
+        background: url(.././images/mission/2-1.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+
+    .cont-1{
+        background: url(.././images/mission/1-1.webp);
+        background-repeat: no-repeat;
+    background-size: cover;   
+    }
+    .containers {
+        width: 100%;
+        margin-bottom: -9%;
+        margin-top: -3%;
+    }
+    
+}
+
+@media only screen and (max-width:983px){
+    .textbig .button {
+        width: 22%;
+    }
+    .textbig-2 .button {
+        width: 23%;
+    }
+    .position-fixed {
+        max-width: 23%;
+        margin: 0% 3%;
+    }
+  .position-fixed .img img {
+    height: 13rem;
+}
+    .position-fixed .para p {
+        font-size: 0.6rem;
+    }
+    .position-fixed {
+        max-width: 25%;
+    }
+    
+}
+@media only screen and (max-width: 920px){
+.between {
+    margin: 0% 11%;
+    margin-bottom: 1%;
+}
+ 
+
+.cont-2{
+    background: url(.././images/mission/2-1-1.webp);
+    background-repeat: no-repeat;
+ background-size: cover;   
+}
+
+}
+@media only screen and (max-width: 880px){
+     .navbar li a {
+    font-size: 1rem;
+}
+ .navbar li {
+    list-style: none;
+    margin: auto;
+    padding: 3px;
+    margin-bottom: -0.5%;
+    margin-top: 0.1%;
+}
+    .between {
+        margin: 0% 7%;
+        margin-bottom: 1%;
+    }
+    .position-fixed {
+        max-width: 25%;
+        margin: 0% 2%;
+    }
+  
+    
+    }
+
+@media only screen and (max-width:785px){
+    .courses-container {
+        flex-direction: column;
+    }
+    .position-fixed {
+        max-width: 59%;
+        margin-bottom: 6%;
+    }
+    .position-fixed .img img {
+        height: 15rem;
+    }
+    .position-fixed .course-name h2 {
+        font-size: 20px;
+    }
+    .position-fixed .para p {
+        font-size: 15px;
+    }
+    .course-heading {
+        font-size: 2rem;
+    }    
+    
+    .between {
+        margin: 0% 5%;
+        margin-bottom: 1%;
+    }
+    .list-box {
+        max-width: 84%;
+    }
+    .list-box-2 {
+        max-width: 84%;
+    }
+    .textbig-2 .button {
+        width: 30%;
+    }
+    .textbig .button {
+        width: 25%;
+    }    
+    .cont-2{
+        background: url(.././images/mission/2-1-2.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+    .cont-1{
+        background: url(.././images/mission/1-1-2.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+    .between {
+        margin-bottom: 1%;
+        margin-left: 7%;
+    }
+    .left a {
+        font-size: 13px;
+    }
+    .right {
+        max-width: 288px;
+        margin-right: -14%;
+    }
+    .left {
+        margin-bottom: 1%;
+        margin-left: -28%;
+    }
+    .textbig p {
+        font-size: 79%;
+    }
+    .textbig-2 p {
+        font-size: 79%;
+    }
+    .containers {
+        width: 95%;
+        margin-bottom: -8%;
+        margin-top: -5%;
+        margin-left: 2%;
+    }
+    
+    
+}
+
+@media only screen and (max-width:700px){
+    .cont-2{
+        background: url(.././images/mission/2-1-3.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+    .navbar li a {
+    font-size: 0.9rem;
+}
+   
+    .right {
+        max-width: 291px;
+        margin-right: -11%;
+    }
+    .course-heading {
+        margin-top: 2.2rem;
+    }
+ 
+  
+}
+@media only screen and (max-width:658px){
+    
+
+    .list-box {
+        max-width: 80%;
+    }
+    .textbig p {
+        font-size: 71%;
+    }
+    .list-box-2 {
+        max-width: 80%;
+    }
+    .textbig-2 p {
+        font-size: 71%;
+    }    
+
+    .textbig .button {
+        width: 29%;
+    }
+    .textbig-2 .button {
+        width: 36%;
+    }
+    .icons {
+        margin: 0px 13px;
+    }
+    .right h1 {
+        margin-left: 23%;
+    }
+    .right {
+        margin-right: -18%;
+    }
+    .left a {
+        font-size: 15px;
+    }
+    .cont-3 {
+        background: url(.././images/mission/3-2-1-2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cont {
+        margin: 0% 5%;
+    }
+    .containers {
+        width: 90%;
+        margin-bottom: -13%;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    .heading h2 {
+        margin-bottom: -11%;
+    }
+}
+@media only screen and (max-width:615px){
+    .course-content .para {
+        font-size: 82%;
+    }
+    .position-fixed .para p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .position-fixed .img img {
+        height: 13rem;
+    }
+    .courses-container {
+        margin-top: 2%;
+    }
+  
+}
+@media only screen and (max-width:600px){
+   .write-box {
+        width: 138%;
+    }
+    .navbar li a {
+        font-size: 0.8rem;
+    }
+    .icons {
+        margin: 0px 7px;
+    }
+    .right h1 {
+        margin-left: 13%;
+    }
+    .icons {
+        list-style: none;
+    }
+    .textbig p {
+        font-size: 64%;
+    }
+    .textbig-2 p {
+        font-size: 64%;
+    }
+ 
+ 
+}
+
+@media only screen and (max-width:535px){
+    .navbar li a {
+        font-size: 14px;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+  
+.logo-menu{
+    display: flex;
+}
+
+
+   
+
+#menu-ul{
+display: none;
+}
+    .navbar li {
+        padding: 2px;
+    }
+   .logo img {
+    margin-bottom: -18.4%;
+    margin-top: -26%;
+}   
+.textbig h5 {
+    font-size: 2rem;
+}
+.menu {
+    display: block;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-right: -8vh;
+}
+    .textbig-2 h5 {
+        font-size: 2rem;
+    }
+    .write-box {
+        width: 135%;
+    }
+    .bigtext h3 {
+        margin-left: -4vw;
+    }
+    .cont-2{
+        background: url(.././images/mission/2-1-4.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+    .cont-1{
+        background: url(.././images/mission/1-1-3.webp);
+        background-repeat: no-repeat;
+     background-size: cover;   
+    }
+ 
+}
+@media only screen and (max-width:527px){
+    .m-1 img {
+        width: 91%;
+        border-radius: 6rem;
+    }
+    .position-fixed .course-name h2 {
+        font-size: 18px;
+    }
+    .list-box {
+        max-width: 71%;
+        flex-direction: column-reverse;
+    }
+    .m-1 {
+        width: 36%;
+    }
+    .containers {
+        margin-bottom: -13%;
+    }
+    .list-box-2 {
+        flex-direction: column;
+        max-width: 71%;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-right: -5vh;
+    }
+    .m-1-2 img {
+        border-radius: 39%;
+    }
+    .textbig .button {
+        width: 24%;
+    }
+    .textbig-2 .button {
+        width: 27%;
+    }
+    .textbig p {
+        font-weight: 900;
+    }
+    .textbig-2 p {
+        font-size: 64%;
+        font-weight: 900;
+    }
+    .write-box {
+        width: 128%;
+        margin-left: -15%;
+    }
+    .bigtext h3 {
+        margin-left: 0vw;
+    }
+    .icons {
+        margin: 0px 5px;
+    }
+    .left a {
+        font-size: 13px;
+    }
+    .between a {
+        color: chartreuse;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .course-heading {
+        margin-top: 1.2rem;
+    }
+}
+@media only screen and (max-width:483px){
+    .position-fixed {
+        max-width: 68%;
+    }
+  .position-fixed .img img {
+    height: 13rem;
+}
+    .course-heading {
+        margin-top: 1.2rem;
+    }
+    .position-fixed .para p {
+        font-size: 13px;
+    }    
+ 
+    .navbar ul {
+        flex-direction: column;
+    }
+.menu{
+    display: block;
+}
+.logo-menu{
+    display: flex;
+}
+
+
+.menu {
+    display: block;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+#menu-ul{
+display: none;
+}
+.textbig .button {
+    width: 31%;
+}
+.menu {
+    display: block;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-right: -1vh;
+}
+.textbig-2 .button {
+    width: 30%;
+}
+.cont {
+    width: 18%;
+    height: 7rem;
+}
+.heading h2 {
+    margin-bottom: -22%;
+}
+.write-box {
+    width: 112%;
+    margin-left: -15%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bigtext h3 {
+    margin-top: 2%;
+    margin-bottom: -9%;
+    font-size: 3rem;
+    margin-left: -5vw;
+}
+.submit {
+    margin-left: 10%;
+    margin-top: -21%;
+}
+.right h1 {
+    margin-left: 13%;
+    font-size: 26px;
+}
+.icons {
+    margin: 0px 3px;
+}
+.between h1{
+    font-size: 26px;
+}
+.containers {
+    margin-bottom: -23%;
+}
+.logo img {
+    margin-bottom: -18.5%;
+    margin-top: -25%;
+}
+}
+
+@media only screen and (max-width:440px){
+    .content {
+        font-size: 0rem;
+    }
+    .position-fixed .course-name h2 {
+        font-size: 14px;
+    }
+    .between {
+        margin-bottom: 1%;
+        margin-left: 2%;
+    }
+    .menu {
+        margin-left: -5%;
+    }
+    .textbig .button {
+        width: 37%;
+    }
+    .textbig-2 .button {
+        width: 37%;
+    }
+    .heading {
+        font-size: 2rem;
+        margin-top: -5%;
+    }
+    .heading h2 {
+        margin-bottom: -33%;
+        margin-top: -17%;
+    }
+    .containers {
+        margin-bottom: -27%;
+        margin-top: -12%;
+    }
+    .course-heading {
+        margin-top: 1.5rem;
+        font-size: 27px;
+    }
+    .position-fixed .para p {
+        font-size: 12px;
+    }
+  .position-fixed .img img {
+    height: 13rem;
+}
+    .course-content .para {
+        font-size: 71%;
+    }
+    div.para.para1{
+            font-size: 71%;
+            margin-left: 2%;
+        
+    }
+ 
+}
+@media only screen and (max-width:420px){
+    .right h1 {
+        margin-left: 19%;
+        font-size: 20px;
+    }
+    .left h1 {
+        margin-left: 19%;
+        font-size: 20px;
+    }
+    .between a {
+        color: chartreuse;
+        text-decoration: none;
+        font-size: 11px;
+    }
+    .left a {
+        color: chartreuse;
+        text-decoration: none;
+        font-size: 11px;
+    }
+    .cont {
+        width: 18%;
+        height: 6rem;
+    }
+    
+    
+}
+@media only screen and (max-width:395px){
+    .left {
+        margin-bottom: 1%;
+        margin-left: -40%;
+    }
+    .menu {
+    margin-left: -9%;
+}
+    .menu div {
+        width: 32px;
+    }
+    .position-fixed {
+        max-width: 78%;
+    }
+    .sidenav{
+        display:none;
+    }
+    .courses-container {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+}
+@media only screen and (max-width:355px){
+    .position-fixed {
+        max-width: 84%;
+    }
+    .sidenav{
+        display: none;
+    }
+    .position-fixed .course-name h2 {
+        font-size: 13px;
+    }
+    .position-fixed .para p {
+        font-size: 10px;
+    }
+     .menu {
+        margin-left: -11%;
+        width: 78px;
+    }
+    .menu div {
+        width: 28px;
+        margin-left: 35%;
+    }
+    .left a {
+        font-size: 9px;
+    }
+    .between a {
+        color: chartreuse;
+        text-decoration: none;
+        font-size: 9px;
+    }
+    .textbig .button {
+        width: 46%;
+    }
+     .textbig-2 .button {
+        width: 44%;
+    }
+    .position-fixed .img img {
+        height: 10rem;
+    }
+ 
+
+    
+}
+
+
+
+
+
+    
+@media only screen and (max-width:337px){
+   .menu div {
+        width: 28px;
+        margin-left: 28%;
+    }
+    .menu {
+        margin-left: -12%;
+        width: 78px;
+    }
+       .follow-icon {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1vh;
+        margin-left: -9%;
+    }
+}
